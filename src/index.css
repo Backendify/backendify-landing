@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import-notmalize;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: 'Red Hat Display', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  @apply scroll-smooth
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  @apply text-black text-[64px] font-bold text-center max-w-2xl
+}
+
+h2 {
+  @apply text-center text-gray-900 text-4xl font-bold mt-2 mb-6 max-w-2xl
+}
+
+h5 {
+  @apply text-center text-gray-400 text-lg font-medium leading-8 max-w-2xl
+}
+
+h6 {
+  @apply text-center text-violet-500 text-base font-bold max-w-2xl
+}
+
+.hero-section-bg {
+  background-image: url('./assets/HeroSectionBackground.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image {
+  background-position: top;
+  background-repeat: no-repeat;
+  resize: horizontal;
+}
