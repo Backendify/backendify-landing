@@ -9,7 +9,7 @@ const CTASection = () => {
   const goToPricing = () => pricingSectionRef.current?.scrollIntoView()
 
   return (
-    <section className="flex flex-col items-center justify-center bg-gray-900 max-lg:mt-0 mt-20 py-32 px-8">
+    <section className="flex flex-col items-center justify-center bg-gray-900 max-lg:mt-0 mt-20 py-32 px-8 cta-section-bg">
       <h2 className="text-white mt-0 mb-0">Supercharge your productivity.</h2>
       <h2 className="text-white mt-0 mb-0">Get started with Backendify today.</h2>
       <h5 className="text-gray-200 mt-6">

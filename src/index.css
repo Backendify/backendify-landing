@@ -6,6 +6,27 @@
 @tailwind utilities;
 
 
+@layer components {
+  .loader {
+    border: 3px solid transparent;
+    border-top: 3px solid white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 :root {
   font-family: 'Red Hat Display', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -48,6 +69,13 @@ h6 {
 .hero-section-bg {
   background-image: url('./assets/HeroSectionBackground.png');
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta-section-bg {
+  background-image: url('./assets/CTASectionBackground.png');
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
 }

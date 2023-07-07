@@ -45,6 +45,7 @@ const SubscribeSection = () => {
           colorClass="gray-900"
           type="submit"
           classes="max-sm:w-full"
+          loading={isSubmitting}
         />
       </form>
       <p className=" text-[10px] text-purple-100 mt-4">
